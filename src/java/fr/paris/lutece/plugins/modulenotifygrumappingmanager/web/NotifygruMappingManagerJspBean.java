@@ -297,7 +297,7 @@ public class NotifygruMappingManagerJspBean extends MVCAdminJspBean
      *            The Http request
      * @return the html code to confirm
      */
-    @Action( value = ACTION_CONFIRM_REMOVE_NOTIFYGRUMAPPINGMANAGER, securityTokenAction = ACTION_REMOVE_NOTIFYGRUMAPPINGMANAGER )
+    @Action( value = ACTION_CONFIRM_REMOVE_NOTIFYGRUMAPPINGMANAGER, securityTokenAction = ACTION_REMOVE_NOTIFYGRUMAPPINGMANAGER, securityTokenDisabled = true )
     public String getConfirmRemoveNotifygruMappingManager( HttpServletRequest request )
     {
         int nId = Integer.parseInt( request.getParameter( PARAMETER_ID_NOTIFYGRUMAPPINGMANAGER ) );
